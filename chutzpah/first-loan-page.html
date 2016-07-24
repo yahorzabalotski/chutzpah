@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<!-- This site was created in Webflow. http://www.webflow.com-->
+<!-- Last Published: Sat Jul 23 2016 20:23:03 GMT+0000 (UTC) -->
+<html data-wf-site="57722ea63f253b3d27a5f394" data-wf-page="578b538da4178cf75189ceef">
+<head>
+  <meta charset="utf-8">
+  <title>First-loan-page</title>
+  <meta property="og:title" content="First-loan-page">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Webflow">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/webflow.css">
+  <link rel="stylesheet" type="text/css" href="css/chutzpah.webflow.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ["Exo:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"]
+      }
+    });
+  </script>
+  <script type="text/javascript" src="js/modernizr.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+  <link rel="apple-touch-icon" href="images/webclip.png">
+</head>
+<body>
+  <div class="login-popup-bg">
+    <div class="login-wrapper w-container">
+      <h1 class="login-h1-text">Log-In</h1>
+      <div class="form-wrapper w-form">
+        <form class="login-form w-clearfix" data-name="Email Form" id="email-form" name="email-form">
+          <label class="form-label-text" for="email-2">Email Address:</label>
+          <input class="popup-textfield w-input" data-name="Email 2" id="email-2" maxlength="256" name="email-2" placeholder="Enter your email address" required="required" type="email">
+          <label class="form-label-text" for="Password-2">Password:</label>
+          <input class="popup-textfield w-input" data-name="Password 2" id="Password-2" maxlength="256" name="Password-2" placeholder="Enter your password" required="required" type="password"><a class="popup-link" href="#">Forgot a password</a><a class="popup-link sing-up-link" href="sing-up.html">I'm a new user</a>
+          <input class="login-button w-button" data-wait="Please wait..." type="submit" value="LOGIN">
+          <div class="close-popup-div" data-ix="close-login-popup">
+            <div class="login-close-x">+</div>
+          </div>
+        </form>
+        <div class="w-form-done">
+          <div>Thank you! Your submission has been received!</div>
+        </div>
+        <div class="w-form-fail">
+          <div>Oops! Something went wrong while submitting the form</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="first-loan-page-section" id="First-page-loan-section">
+    <div class="first-loan-page-wrapper">
+      <div class="first-loan-page-conteiner w-container">
+        <div class="first-loan-page-topbg w-clearfix" data-ix="form-move-from-top">
+          <h4 class="h4-first-loan-page"><a class="main-arrows" href="index.html">&lt;&lt;&lt;</a> &nbsp; <a class="back-to-main" href="index.html">Back to main</a></h4>
+          <h1 class="h2first-loan-page">FIND A BETTER INTEREST<br> RATE</h1>
+          <h3 class="h3-first-loan-page header-left" data-ix="logo-fade-in-2">Compare your existing debt information<br>to see how you could lower your interest rate<br>and monthly payments and save on total interest.</h3>
+          <h3 class="comment-red h3-registration-form">// first step</h3>
+        </div>
+      </div>
+      <h1 class="center-black h2first-loan-page" data-ix="logo-fade-in-2">Enter Your&nbsp;Current Loan</h1>
+      <div class="first-loan-page-form-wrapper w-form" data-ix="logo-fade-in-2">
+        <form class="first-loan-fage-form" data-name="Email Form" id="email-form" method="get" name="email-form">
+          <label class="form-label" for="Loan">loan amount:</label>
+          <input autofocus="autofocus" class="form-text-field w-input" data-name="Loan" id="Loan" maxlength="256" name="Loan" placeholder="$" required="required" type="text">
+          <label class="form-label" for="APR">INTEREST Rate:</label>
+          <input class="form-text-field w-input" data-name="APR" id="APR" maxlength="256" name="APR" placeholder="%" required="required" type="text">
+          <label class="form-label" for="Years">TERM - Number OF Years and MONTHS:</label>
+          <div class="term-wrapper">
+            <input class="form-text-field half-width w-input" data-name="Years" id="Years" maxlength="256" name="Years" placeholder="Number Of Years" required="required" type="text">
+            <input class="form-text-field half-width w-input" data-name="Months" id="Months" maxlength="256" name="Months" placeholder="Number Of Months" type="text">
+          </div>
+          <label class="form-label" for="Financial-institution">Financial institution:</label>
+          <select class="financial-institution w-select" data-name="Financial-institution" id="Financial-institution" name="Financial-institution" required="required">
+            <option value="">Select one...</option>
+            <option value="First">First Choice</option>
+            <option value="Second">Second Choice</option>
+            <option value="Third">Third Choice</option>
+          </select>
+          <label class="form-label" for="Loan">your credit score:</label>
+          <input class="form-text-field w-input" data-name="Loan" id="Loan" maxlength="256" name="Loan" placeholder="350 - 850" required="required" type="text">
+          <label class="form-label" for="Loan-2">your yearly income:</label>
+          <input class="form-text-field w-input" data-name="Loan 2" id="Loan-2" maxlength="256" name="Loan-2" placeholder="$" required="required" type="text">
+          <label class="form-label" for="Loan-3">ALL Personal Debt:</label>
+          <input class="form-text-field w-input" data-name="Loan 3" id="Loan-3" maxlength="256" name="Loan-3" placeholder="$" required="required" type="text">
+          <input class="find-button w-button" data-ix="result1-show" data-wait="Please wait..." type="submit" value="FIND MY RATE">
+        </form>
+        <div class="w-form-done">
+          <div>Thank you! Your submission has been received!</div>
+        </div>
+        <div class="w-form-fail">
+          <div>Oops! Something went wrong while submitting the form</div>
+        </div>
+      </div>
+      <div class="searching-results">
+        <div class="result-wrapper" id="Result-wrapper">
+          <h2 class="h2first-loan-page result">searching results</h2>
+          <div class="result-raw-1 w-row">
+            <div class="output-col w-col w-col-6" id="Output-col">
+              <div class="main-result-text result-text">User ID:</div>
+            </div>
+            <div class="result-col w-col w-col-2">
+              <div class="result-text">#000465</div>
+            </div>
+            <div class="result-col w-col w-col-2">
+              <div class="result-text">#000014</div>
+            </div>
+            <div class="result-col w-col w-col-2">
+              <div class="result-text">#000776</div>
+            </div>
+          </div>
+          <div class="result-raw-1 w-row">
+            <div class="output-col w-col w-col-6" id="Output-col">
+              <div class="main-result-text result-text">LOAN AMOUNT: $</div>
+            </div>
+            <div class="result-col w-col w-col-2">
+              <div class="result-text">10000</div>
+            </div>
+            <div class="result-col w-col w-col-2">
+              <div class="result-text">10000</div>
+            </div>
+            <div class="result-col w-col w-col-2">
+              <div class="result-text">10000</div>
+            </div>
+          </div>
+          <div class="result-raw-1 w-row">
+            <div class="output-col w-col w-col-6" id="Output-col">
+              <div class="main-result-text result-text">APR: %</div>
+            </div>
+            <div class="result-col w-col w-col-2">
+              <div class="result-text">4</div>
+            </div>
+            <div class="result-col w-col w-col-2">
+              <div class="result-text">5</div>
+            </div>
+            <div class="result-col w-col w-col-2">
+              <div class="result-text">5.5</div>
+            </div>
+          </div>
+          <div class="result-raw-1 w-row">
+            <div class="output-col w-col w-col-6" id="Output-col">
+              <div class="main-result-text result-text">Monthly payment: $</div>
+            </div>
+            <div class="result-col w-col w-col-2">
+              <div class="result-text">45.0</div>
+            </div>
+            <div class="result-col w-col w-col-2">
+              <div class="result-text">48.0</div>
+            </div>
+            <div class="result-col w-col w-col-2">
+              <div class="result-text">54.0</div>
+            </div>
+          </div>
+          <div class="result-raw-1 w-row">
+            <div class="output-col w-col w-col-6" id="Output-col">
+              <div class="main-result-text result-text">BANK:</div>
+            </div>
+            <div class="result-col w-col w-col-2">
+              <div class="result-text">NYC BANK</div>
+            </div>
+            <div class="result-col w-col w-col-2">
+              <div class="result-text">1st bank</div>
+            </div>
+            <div class="result-col w-col w-col-2">
+              <div class="result-text">Nashville bank</div>
+            </div>
+          </div>
+          <div class="result-raw-1 w-row">
+            <div class="output-col w-col w-col-6" id="Output-col">
+              <div class="important main-result-text result-text">MONTHLY&nbsp;SAVINGS: $</div>
+            </div>
+            <div class="result-col w-col w-col-2">
+              <div class="important-text result-text">9.0</div>
+            </div>
+            <div class="result-col w-col w-col-2">
+              <div class="important-text result-text">9.5</div>
+            </div>
+            <div class="result-col w-col w-col-2">
+              <div class="important-text result-text">10.8</div>
+            </div>
+          </div>
+          <div class="result-raw-1 w-row">
+            <div class="output-col w-col w-col-6" id="Output-col">
+              <div class="important main-result-text result-text">LIFETIME&nbsp;SAVINGS:</div>
+            </div>
+            <div class="result-col w-col w-col-2">
+              <div class="important-text result-text">900.00</div>
+            </div>
+            <div class="result-col w-col w-col-2">
+              <div class="important-text result-text">850.00</div>
+            </div>
+            <div class="result-col w-col w-col-2">
+              <div class="important-text result-text">700.50</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottombg first-loan-page-topbg w-clearfix" data-ix="form-move-from-top-2">
+        <h3 class="bottom comment-red h3-registration-form">// important!</h3>
+        <h3 class="h3-first-loan-page header-right" data-ix="logo-fade-in-2">To get more detailed information you need<br><span class="red-span"><a class="singup-link" href="sing-up.html">to create an account</a></span> or <span class="blue-span" data-ix="login-popup">log in</span></h3>
+        <div class="questions-wrapper w-clearfix">
+          <h3 class="h3-white-left">Have any questions?</h3>
+          <div class="get-response-button w-clearfix">
+            <h3 class="bottom comment-red h3-registration-form response">// get response</h3>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-container w-container" data-ix="form-move-from-top-2">
+        <div class="copyright-div">
+          <h4 class="h4-copyright">2016 © chutzpah.com. All rights reserved</h4>
+        </div>
+        <div class="back-on-top-div w-clearfix">
+          <h4 class="h4-copyright ontop"><a class="totop-link" href="#First-page-loan-section">back on top</a></h4>
+          <div class="top-arrows-div" data-ix="on-top">
+            <h1 class="toparrows"><a class="totop-link" href="#First-page-loan-section">&gt;</a></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="questions-form">
+    <h2>Heading</h2>
+  </div>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script type="text/javascript" src="js/webflow.js"></script>
+  <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+</body>
+</html>
