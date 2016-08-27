@@ -112,6 +112,7 @@ body {
   margin-left: auto;
   padding-top: 7px;
   color: #ecf0f1;
+  font-size: 0.5em;
   text-decoration: none;
 }
 
@@ -445,7 +446,7 @@ body {
 
 .h4-copyright {
   color: #ecf0f1;
-  font-size: 1em;
+  font-size: 0.8em;
   text-transform: uppercase;
 }
 
@@ -479,6 +480,10 @@ body {
 .totop-link {
   color: #ecf0f1;
   text-decoration: none;
+}
+
+.totop-link.on-top {
+  font-size: 1.3em;
 }
 
 .contact-form-wrapper {
@@ -541,7 +546,7 @@ body {
 }
 
 .first-loan-page-section {
-  height: 100vh;
+  height: auto;
 }
 
 .first-loan-page-topbg {
@@ -695,6 +700,7 @@ body {
   margin-left: auto;
   padding-top: 13px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .result-wrapper {
@@ -866,9 +872,63 @@ body {
   left: 0px;
   top: 0px;
   bottom: 0px;
+  display: none;
   width: 450px;
   border: 1px solid #ecf0f1;
   background-color: #282f35;
+}
+
+.p {
+  font-size: 0.8em;
+  font-weight: 400;
+  text-align: left;
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #e0dada;
+  background-color: #000;
+  color: #3498db;
+}
+
+.checkboxlabel {
+  display: block;
+  height: 100%;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  color: #3498db;
+  font-size: 1em;
+  line-height: 2em;
+}
+
+.checkboxfoeld {
+  height: 2em;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.terms-header {
+  margin-top: 50px;
+  font-size: 1em;
+  line-height: 1.4em;
+  text-transform: uppercase;
+}
+
+.terms-p {
+  text-align: justify;
+  text-indent: 10px;
+}
+
+.terms-p.h4 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.profits-link {
+  border-bottom: 1px dashed #90c2e4;
+  color: #90c2e4;
+  text-decoration: none;
 }
 
 html.w-mod-js *[data-ix="logo-fade-in"] {
