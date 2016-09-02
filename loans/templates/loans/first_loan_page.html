@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block title %}
+First loan page.
+{% endblock %}
+
+{% block page_header %}
+First loan page.
+{% endblock %}
+
+{% block main_content %}
+      <h1 class="center-black h2first-loan-page" data-ix="logo-fade-in-2">Enter Your&nbsp;Current Loan</h1>
+      <div class="first-loan-page-form-wrapper w-form" data-ix="logo-fade-in-2">
+        <form action='/loans/search' class="first-loan-fage-form" data-name="Email Form" id="email-form" method="get" name="email-form">
+          {% csrf_token %}
+          <label class="form-label" for="Loan">loan amount:</label>
+          <input autofocus="autofocus" class="form-text-field w-input" data-name="Loan" id="Loan" maxlength="256" name="Loan" placeholder="$" required="required" type="text">
+          <label class="form-label" for="APR">INTEREST Rate:</label>
+          <input class="form-text-field w-input" data-name="APR" id="APR" maxlength="256" name="APR" placeholder="%" required="required" type="text">
+          <label class="form-label" for="Years">TERM - Number OF Years and MONTHS:</label>
+          <div class="term-wrapper">
+            <input class="form-text-field half-width w-input" data-name="Years" id="Years" maxlength="256" name="Years" placeholder="Number Of Years" required="required" type="text">
+            <input class="form-text-field half-width w-input" data-name="Months" id="Months" maxlength="256" name="Months" placeholder="Number Of Months" type="text">
+          </div>
+          <label class="form-label" for="Financial-institution">Financial institution:</label>
+          <select class="financial-institution w-select" data-name="Financial-institution" id="Financial-institution" name="Financial-institution" required="required">
+            <option value="">Select one...</option>
+            <option value="First">First Choice</option>
+            <option value="Second">Second Choice</option>
+            <option value="Third">Third Choice</option>
+          </select>
+          <label class="form-label" for="Loan">your credit score:</label>
+          <input class="form-text-field w-input" data-name="Loan" id="Loan" maxlength="256" name="Loan" placeholder="350 - 850" required="required" type="text">
+          <label class="form-label" for="Loan-2">your yearly income:</label>
+          <input class="form-text-field w-input" data-name="Loan 2" id="Loan-2" maxlength="256" name="Loan-2" placeholder="$" required="required" type="text">
+          <label class="form-label" for="Loan-3">ALL Personal Debt:</label>
+          <input class="form-text-field w-input" data-name="Loan 3" id="Loan-3" maxlength="256" name="Loan-3" placeholder="$" required="required" type="text">
+          <!--input class="find-button w-button" data-ix="result1-show" data-wait="Please wait..." type="submit" value="FIND MY RATE"-->
+          <input type="submit" value="Search"/>
+        </form>
+        <div class="w-form-done">
+          <div>Thank you! Your submission has been received!</div>
+        </div>
+        <div class="w-form-fail">
+          <div>Oops! Something went wrong while submitting the form</div>
+        </div>
+      </div>
+{% endblock %}
